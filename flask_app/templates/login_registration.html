@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes | Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap/bootstrap.css') }}">
+</head>
+<body class="bg-secondary">
+    <div class="container bg-light px-5 pb-5 shadow-lg">
+        <div class="row">
+            <!-- registration side -->
+            <div class="col">
+                <h2 class="fs-1 my-5">Register</h2>
+                <!-- error box -->
+                <div class="text-danger" id="error-box"></div>
+                <!-- form start -->
+                <form id="registration" method="post" class="fs-4">
+                    <!-- first name -->
+                    <label for="f_name" class="form-label">First Name:</label>
+                    <input type="text" name="f_name" id="f_name" class="form-control w-50 mb-3">
+                    <!-- last name -->
+                    <label for="l_name" class="form-label">Last Name:</label>
+                    <input type="text" name="l_name" id="l_name" class="form-control w-50 mb-3">
+                    <!-- email -->
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" class="form-control w-50 mb-3">
+                    <!-- password -->
+                    <label for="password" class="form-label">Password:</label>
+                    <input type="password" name="password" id="password" class="form-control w-50 mb-3">
+                    <!-- first name -->
+                    <label for="confirm_password" class="form-label">Confirm Password:</label>
+                    <input type="password" name="confirm_password" id="confirm_password" class="form-control w-50 mb-3">
+                    <!-- submit button -->
+                    <input type="submit" value="Register" class="btn btn-outline-danger">
+                </form>
+                <!-- form end -->
+            </div>
+            <!-- login side -->
+            <div class="col"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/registration.js') }}"></script>
+</body>
+</html>
